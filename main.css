@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    background-color: antiquewhite;
+}
+
+.b{
+    border: solid 5px rgb(98, 122, 208);
+    background-color: #f8f9fa;
+}
+
+.tipo{
+    font-size: 42px;
+}
+
+.m{
+    min-width: 300px ;
+}
+

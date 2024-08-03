@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-primary ">
+            <div class="container-fluid">
+                <h2>Ejercicio Eventos.Carlos Rene Perez G</h2>
+            </div>
+        </nav>
+    </header>
+
+    <!--Ejercicio calculadora de IMC-->
+
+    <main class="contenedorPrincipal d-flex flex-column">
+        <div
+            class="areaPrincipal areaPrincipal gap-3 pt-5 d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                <div class="container-fluid b w-100 p-3">
+                    <h1 class="text-center tipo">Calculadora IMC</h1>
+                    <form id="formulario" class="w-100">
+                        <div class="mb-3">
+                            <label for="altura" class="form-label">Estatura Centímetros:</label>
+                            <input type="number" class="form-control" id="altura"
+                                placeholder="Introduce tu estatura en cm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="kg" class="form-label">Peso Kilogramos:</label>
+                            <input type="text" class="form-control" id="kg" placeholder="Introduce tu peso en kg">
+                        </div>
+                        <div class="d-flex justify-content-start mb-3">
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rs" class="form-label">Resultado:</label>
+                            <input type="text" class="form-control" id="rs" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+<!--Ejercicio Conversor Divisa-->
+
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                <div class="container-fluid b w-100 p-3">
+                    <h1 class="text-center tipo">Conversor de Divisa</h1>
+                    <form id="formularioDivisa" class="w-100">
+                        <div class="mb-3">
+                            <label for="dolar" class="form-label">Dólares (USD):</label>
+                            <input type="text" class="form-control" id="dolar" placeholder="Introduce dólares">
+                        </div>
+                        <div class="mb-3">
+                            <label for="peso" class="form-label">Pesos Mexicanos (MXN):</label>
+                            <input type="text" class="form-control" id="peso" placeholder="Introduce pesos">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<!--Ejercicio Notas Complejo-->
+
+        <div class="container mt-5 b bg-secondary p-4 ">
+            <div class="row justify-content-center ">
+                <div class="col-12 col-md-8">
+                    <h1 class="text-center mb-4">App de Notas</h1>
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="titulo" class="form-label">Título</label>
+                                <input type="text" id="titulo" class="form-control"
+                                    placeholder="Introduce el título de la nota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="texto" class="form-label">Nota</label>
+                                <textarea id="texto" class="form-control" rows="4"
+                                    placeholder="Escribe tu nota aquí"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button id="guardar" class="btn btn-primary me-2  m-2">Guardar</button>
+                                <button id="limpiar" class="btn btn-secondary me-2 m-2">Limpiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contenedorFiltros" class="d-flex align-items-center justify-content-center p-3">
+                <input class="form-control m-3 w-25" type="text" id="buscarTexto" placeholder="Buscar por texto">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="filtrarRealizadas">
+                    <label class="form-check-label" for="filtrarRealizadas"> Mostrar solo realizadas</label>
+                </div>
+            </div>
+            <div id="contenedorNota" class=" d-flex align-items-center justify-content-center p-3 flex-wrap">
+                <h1>contenido</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar bg-primary">
+            <div class="container-fluid mt-3">
+            </div>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
